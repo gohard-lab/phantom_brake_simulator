@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: phantom-brake-simulator
+Version: 0.1.0
+Summary: Simulate autonomous vehicle sensor fusion conflicts and phantom braking.
+Requires-Python: >=3.9
+Requires-Dist: plotly>=5.18.0
+Requires-Dist: numpy>=1.26.0
