@@ -1,5 +1,6 @@
 import plotly.graph_objects as go
 import numpy as np
+from tracker import log_app_usage
 
 def simulate_sensor_fusion_dilemma(output_filename="phantom_braking_chart.html"):
     # 1. 시뮬레이션 시간축 설정 (0~10초, 데이터 포인트를 200개로 늘려 정밀도 향상)
@@ -58,4 +59,5 @@ def simulate_sensor_fusion_dilemma(output_filename="phantom_braking_chart.html")
     print(f"시뮬레이션 완료. 결과 파일: {output_filename}")
 
 if __name__ == "__main__":
+    log_app_usage("phantom-brake-simulator", "simulator_started")
     simulate_sensor_fusion_dilemma()
